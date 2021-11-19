@@ -1,4 +1,5 @@
 <template>
+
   <div id="main" :class="isDay ? 'day' : 'night'">
     <div class="container my-5" style="max-width: 400px; min-width: 360px">
       <h1 class="title text-center">Weather in</h1>
@@ -18,6 +19,8 @@
       >
         <!-- weather animation container -->
         <div>
+          <div>
+          </div>
           <div icon="sunny" v-if="clearSky" data-label="Sunny">
             <span class="sun"></span>
           </div>
@@ -116,6 +119,7 @@
 
 <script>
 export default {
+  
   data() {
     return {
       cityFound: false,
@@ -129,8 +133,8 @@ export default {
       isDay: true,
       citySearch: "",
       weather: {
-        cityName: "Gwarinpa",
-        country: "NG",
+        cityName: "Lahore",
+        country: "PK",
         temperature: 12,
         description: "Clouds everywhere",
         lowTemp: "19",
@@ -227,6 +231,7 @@ export default {
       }
     },
   },
+  
 };
 </script>
 
